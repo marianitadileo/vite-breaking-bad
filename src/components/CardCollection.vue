@@ -17,11 +17,9 @@ export default {
 
 <template>
     <main class="bg-warning">
-        <h3>card collections</h3>
-        <ul>
-            <li v-for="character in collection" :key="index">{{ character.name }}</li>
-        </ul>
-        <Cards />
+        <div v-for="character in collection.charactersCard" :key="character.id">
+            <Cards :character="character"/>
+        </div>
+      
     </main>
-    
 </template>
