@@ -15,9 +15,11 @@ export default {
 </script>
 
 <template>
-    <div class="text-center container">
-        <img :src="character.image" alt="">
-        <h3>{{ character.name }}</h3>
+    <div class="text-center card">
+        <img :src="character.card_images[0].image_url" alt="" class="card-img-top">
+        <div class="card-body">
+            <h3 class="card-title">{{ character.name }}</h3>
+        </div>
     </div>
 </template>
 

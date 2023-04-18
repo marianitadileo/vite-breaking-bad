@@ -17,9 +17,10 @@ export default {
 
 <template>
     <main class="bg-warning">
-        <div v-for="character in collection.charactersCard" :key="character.id">
-            <Cards :character="character"/>
+        <div class="row row-cols-5">
+            <div class="col" v-for="character in collection.charactersCard" :key="character.id">
+                <Cards :character="character"/>
+            </div>
         </div>
-      
     </main>
 </template>
