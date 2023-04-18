@@ -19,6 +19,7 @@ export default {
   mounted() {
     axios.get(collection.apiURL).then((resp) => {
       this.collection.charactersCard = resp.data.data;
+      console.log(collection.charactersCard);
     })
   }
 }
@@ -27,7 +28,6 @@ export default {
 <template>
   <AppHeader title="Yu-Gi-Oh Api"/>
   <CardCollection />
-  <Cards />
 </template>
 
 <style lang="scss">

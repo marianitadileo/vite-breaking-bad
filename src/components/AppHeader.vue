@@ -8,15 +8,20 @@ export default {
 </script>
 
 <template>
-    <header>
-        <h1 class="p-4">{{ title }}</h1>
+    <header class="ms_header d-flex">
+        <img class="ms_logo" src="../assets/logo-yu-gi-oh.jpg" alt="">
+        <h1 class="p-3">{{ title }}</h1>
     </header>
 </template>
 
 <style scoped lang="scss">
-header {
-    background-color: lightblue;
-    height: 100px;
-    width: 100%;
+.ms_header {
+    height: 80px;
+}
+
+.ms_logo {
+    width: 10%;
+    padding: 10px;
+    text-align: left;
 }
 </style>
