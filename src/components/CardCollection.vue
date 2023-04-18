@@ -16,11 +16,11 @@ export default {
 </script>
 
 <template>
-    <main class="bg-warning">
-        <div class="p-3 bg-dark text-light mx-4">Founds {{ collection.charactersCard.length }} cards</div>
-        <div v-if="collection.charactersCard.length === 0">Loading...</div>
-        <div v-else class="row row-cols-5 bg-light mx-4"> 
-            <div class="col m-4" v-for="character in collection.charactersCard" :key="character.id">
+    <main class="ms_color">
+        <div class="p-3 bg-dark text-light mx-4">Founds cards : {{ this.collection.charactersCard.length }}</div>
+        <div v-if="this.collection.charactersCard.length == 0">Loading...</div>
+        <div v-else class="row row-cols-5 bg-light mx-4 d-flex justify-content-center"> 
+            <div class="col mb-4" v-for="character in collection.charactersCard" :key="character.id">
                 <Cards :character="character"/>
             </div>
         </div>
